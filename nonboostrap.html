@@ -50,6 +50,30 @@
             margin: 4px 0;
             box-sizing: border-box;
         }
+
+        /* Media query untuk perangkat dengan layar lebih kecil */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 80%; /* Lebar form menjadi 80% dari layar */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 100%; /* Lebar form menjadi 100% untuk layar kecil */
+                padding: 15px;
+            }
+            td {
+                display: block;
+                width: 100%;
+            }
+            td:first-child {
+                margin-bottom: 5px;
+            }
+            input[type="submit"] {
+                padding: 12px;
+            }
+        }
     </style>
 </head>
 <body>
